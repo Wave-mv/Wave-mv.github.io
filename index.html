@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/wave/style.css" rel="stylesheet">
     <style>
         .app {
             min-height: 100vh;
+            width:100%;
         }
     </style>
     <title>Wave</title>
 </head>
 <body>
-    <div class="app flex flex-col justify-center items-center">
-        <div class="mb-8">
-            <svg width="187" height="187" viewBox="0 0 187 187" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M33 97.8988C95.7575 136.025 81.7612 51.2049 154 88.9027" stroke="#D43D86" stroke-width="9"
+    <div class="app flex flex-col justify-center items-center relative antialiased">
+        <div class="absolute top-0 right-0 flex items-center p-10">
+            <a href="https://www.facebook.com/getwavemv" class="text-gray-500 uppercase mr-6 text-sm tracking-wider">Facebook</a>
+            <a href="https://twitter.com/getwave" class="text-gray-500 uppercase text-sm tracking-wider">Twitter</a>
+        </div>
+        <div class="mb-10">
+            <svg width="147" height="147" viewBox="0 0 147 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.9412 76.9578C75.2746 106.929 64.2722 40.2519 121.059 69.886" stroke="#D43D86" stroke-width="9"
                     stroke-linecap="round" />
-                <circle cx="93.5" cy="93.5" r="89" stroke="#D43D86" stroke-width="9" />
+                <circle cx="73.5" cy="73.5" r="69" stroke="#D43D86" stroke-width="9" />
             </svg>
         </div>
-        <div class="text-3xl lg:text-5xl font-bold text-gray-800">
+        <div class="text-3xl lg:text-5xl font-medium text-black">
             #NextWave
         </div>
     </div>
